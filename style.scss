@@ -1,82 +1,81 @@
 * {
     padding: 0;
     margin: 0;
-  }
-  
-  img {
+}
+
+img {
     max-width: 100%;
     width: auto;
     height: auto;
-  }
+}
 body {
-  background: url(tic-tac-toe.webp);
+    background: url(images/tic-tac-toe.webp);
 }
 
 .container {
     margin: 0 auto;
     text-align: center;
     .wrapper {
-        padding-top: 100px;
-        ul  {
+        padding-top: 75px;
+        ul {
             li {
                 margin-bottom: 30px;
                 $speed: 0.5s;
-.btn-flip{
-  opacity: 1;
-  outline: 0;
-  color: #fff;
-  line-height: 40px;
-  position: relative;
-  text-align: center;
-  letter-spacing: 1px;
-  display: inline-block;
-  text-decoration: none;
-  font-family: 'Open Sans';
-  text-transform: uppercase;
-  min-width: 250px;
-  &:hover{
-    
-    &:after{
-      opacity: 1;
-      transform: translateY(0) rotateX(0);
-    }
-    
-    &:before{
-      opacity: 0;
-      transform: translateY(50%) rotateX(90deg);
-    }
-  }
-  
-  &:after{
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    color: #323237;
-    display: block;
-    transition: $speed;
-    position: absolute;
-    background: #adadaf;
-    content: attr(data-back);
-    transform: translateY(-50%) rotateX(90deg);
-  }
-  
-  &:before{
-    top: 0;
-    left: 0;
-    opacity: 1;
-    color: #adadaf;
-    display: block;
-    padding: 0 30px;
-    line-height: 40px;
-    transition: $speed;
-    position: relative;
-    background: #323237;
-    content: attr(data-front);
-    transform: translateY(0) rotateX(0);
-  }
-}
+                .btn-flip {
+                    opacity: 1;
+                    outline: 0;
+                    color: #fff;
+                    line-height: 40px;
+                    position: relative;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    display: inline-block;
+                    text-decoration: none;
+                    font-family: "Open Sans";
+                    text-transform: uppercase;
+                    min-width: 250px;
+                    &:hover {
+                        &:after {
+                            opacity: 1;
+                            transform: translateY(0) rotateX(0);
+                        }
+
+                        &:before {
+                            opacity: 0;
+                            transform: translateY(50%) rotateX(90deg);
+                        }
+                    }
+
+                    &:after {
+                        top: 0;
+                        left: 0;
+                        opacity: 0;
+                        width: 100%;
+                        color: #323237;
+                        display: block;
+                        transition: $speed;
+                        position: absolute;
+                        background: #adadaf;
+                        content: attr(data-back);
+                        transform: translateY(-50%) rotateX(90deg);
+                    }
+
+                    &:before {
+                        top: 0;
+                        left: 0;
+                        opacity: 1;
+                        color: #adadaf;
+                        display: block;
+                        padding: 0 30px;
+                        line-height: 40px;
+                        transition: $speed;
+                        position: relative;
+                        background: #323237;
+                        content: attr(data-front);
+                        transform: translateY(0) rotateX(0);
+                    }
+                }
             }
-          }
-      }
-  }
+        }
+    }
+}
